@@ -1,0 +1,14 @@
+受信:
+    format = 行動
+    data_vec = [0.7, 0.3, 0.0, 1.0] → AIに入力 → 状態制御
+
+受信:
+    format = 画像
+    data_vec = バイト列
+    metadata = data_vec[0:4]（例えば感情スコア）
+
+受信:
+    format = LLM embedding
+    data_vec = GPTから取得したベクトル
+    → 学習用データとして転用
+
